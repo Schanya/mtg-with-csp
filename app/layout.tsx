@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-PZZN7BZ3"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PNF8W7XM"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
@@ -40,7 +40,7 @@ export default function RootLayout({
         {children}
       </body>
 
-      <GoogleTagManager gtmId="GTM-XYZ" />
+      <GoogleTagManager gtmId="GTM-PNF8W7XM" />
     </html>
   );
 }
