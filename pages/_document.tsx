@@ -1,4 +1,3 @@
-import { GoogleTagManager } from "@next/third-parties/google";
 import type { DocumentContext, DocumentInitialProps } from "next/document";
 import Document, { Head, Html, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
@@ -36,7 +35,6 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta name="yandex-verification" content="7411faececca6249" />
           <link
             rel="icon"
             type="image/png"
@@ -45,15 +43,6 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
-          <GoogleTagManager gtmId="GTM-K32X8JXH" />
-          <noscript>
-            <iframe
-              src="https://www.googletagmanager.com/ns.html?id=GTM-K32X8JXH"
-              height="0"
-              width="0"
-              style={{ display: "none", visibility: "hidden" }}
-            />
-          </noscript>
           <Main />
           <NextScript />
         </body>
