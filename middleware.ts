@@ -6,6 +6,8 @@ export async function middleware(request: NextRequest) {
   const response = await fetch(`https://ipapi.co/${ip}/json/`);
   const data = await response.json();
 
+  console.log("data.country_code");
+  console.log(data.country_code);
   if (data.country_code !== "RU") {
     console.log("Access denied");
     return new NextResponse("Access denied", { status: 403 });
