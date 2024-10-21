@@ -41,10 +41,11 @@ class MyDocument extends Document {
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="/favicon/favicon-32x32.png"
+            href="/favicon/favicon.ico"
           />
         </Head>
         <body>
+          <GoogleTagManager gtmId="GTM-K32X8JXH" />
           <noscript>
             <iframe
               src="https://www.googletagmanager.com/ns.html?id=GTM-K32X8JXH"
@@ -56,8 +57,6 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-
-        <GoogleTagManager gtmId="GTM-K32X8JXH" />
       </Html>
     );
   }
